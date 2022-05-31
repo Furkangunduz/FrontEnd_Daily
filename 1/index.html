@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="display: flex; flex-direction: column; gap: 10px">
+        <div class="first-component">
+            <div class="container">
+                <form action="">
+                    <div class="search-icon">
+                        <svg
+                            width="28"
+                            height="28"
+                            viewBox="0 0 28 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g opacity="0.5">
+                                <circle
+                                    cx="11.6667"
+                                    cy="11.6667"
+                                    r="8.16667"
+                                    stroke="white"
+                                    stroke-width="1.75"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M24.5 24.5L17.5 17.5"
+                                    stroke="white"
+                                    stroke-width="1.75"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                        </svg>
+                    </div>
+                    <input type="text" placeholder="Start typing to search" />
+                </form>
+                <div class="search-container">
+                    <h6>POPULAR SEARCHES</h6>
+                    <ul>
+                        <li>
+                            <a href="#">Air Transport</a>
+                        </li>
+                        <li>
+                            <a href="#">Aviation</a>
+                        </li>
+                        <li>
+                            <a href="#">Mekaniske Verksted</a>
+                        </li>
+                        <li>
+                            <a href="#">Port Authority</a>
+                        </li>
+                        <li>
+                            <a href="#">Sporvei</a>
+                        </li>
+                        <li>
+                            <a href="#">Bergens Kreditbank</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="second-component" style="width: 656px; height: 56px">
+            <div class="search-container">
+                <div class="search-icon">
+                    <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g opacity="0.5">
+                            <circle
+                                cx="11.6667"
+                                cy="11.6667"
+                                r="8.16667"
+                                stroke="white"
+                                stroke-width="1.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M24.5 24.5L17.5 17.5"
+                                stroke="white"
+                                stroke-width="1.75"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <input type="text" placeholder="Start typing to search" />
+            </div>
+            <div class="radio-container">
+                <ul>
+                    <li>
+                        <label>
+                            <input checked type="radio" name="type" />
+                            <span class="text">Projects</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="type" />
+                            <span class="text">Images</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="type" />
+                            <span class="text">People</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="third-component">
+            <form action="">
+                <ul>
+                    <li>
+                        <div class="key">Country</div>
+                        <div class="value">
+                            <select>
+                                <option value="">Norway</option>
+                                <option value="">Turkey</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="key">Country</div>
+                        <div class="value">
+                            <input type="text" />
+                        </div>
+                    </li>
+                </ul>
+                <div class="filter-button">
+                    <a href="#">Cancel</a>
+                    <button>Apply Filter</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
