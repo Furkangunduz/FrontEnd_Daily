@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&family=Mulish:wght@300;500;600;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.settings-popup {
+  padding: 85px 100px;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 912px;
+  height: 787px;
+}
+
+.settings-popup h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #874285;
+}
+
+.settings-popup hr {
+  height: 1px;
+  background-color: #d8dbe6;
+  width: 711px;
+  margin: 45px 0;
+}
+
+.settings-popup .radio-settings ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.settings-popup .radio-settings ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.settings-popup .radio-settings ul li .item h6 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #874285;
+  margin-bottom: 13px;
+}
+
+.settings-popup .radio-settings ul li .item p {
+  color: #242e4c;
+  font-size: 16px;
+}
+
+.settings-popup .radio-settings ul li label .checkbox {
+  display: block;
+  width: 66px;
+  height: 37px;
+  border: 2px solid #d8dbe6;
+  border-radius: 20px;
+  position: relative;
+}
+
+.settings-popup .radio-settings ul li label .checkbox::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #9298ad;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.settings-popup .radio-settings ul li label input {
+  display: none;
+}
+
+.settings-popup .radio-settings ul li label input:checked + .checkbox::before {
+  left: 32px;
+  background: #874285;
+}
+
+.settings-popup ul li .text h5 {
+  margin-top: 55px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #874285;
+}
+
+.settings-popup ul li .text p {
+  margin-top: 13px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #242e4c;
+}
+
+.settings-popup ul li .text select {
+  margin-top: 35px;
+  padding: 12px 20px;
+  width: 330px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid rgba(216, 219, 230, 0.7);
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff url("./Rectangle.png") no-repeat calc(100% - 20px);
+  cursor: pointer;
+}
+
+.settings-popup ul li .text select:hover {
+  border-color: #d8dbe6;
+}
+
+.settings-popup .actions {
+  margin-top: 55px;
+}
+
+.settings-popup .actions a {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  display: inline-block;
+  padding: 16px 60px;
+  background-color: transparent;
+  color: #9298ad;
+  border: 2px solid #d8dbe6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.settings-popup .actions a:first-child {
+  background-color: #f34b8c;
+  color: #fff;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&family=Mulish:wght@300;500;600;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: grid;
+    place-items: center;
+}
+
+.settings-popup {
+    padding: 85px 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 912px;
+    height: 787px;
+    h2 {
+        font-size: 28px;
+        font-weight: 900;
+        color: #874285;
+    }
+    hr {
+        height: 1px;
+        background-color: #d8dbe6;
+        width: 711px;
+        margin: 45px 0;
+    }
+    .radio-settings {
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                .item {
+                    h6 {
+                        font-size: 20px;
+                        font-weight: 900;
+                        color: #874285;
+                        margin-bottom: 13px;
+                    }
+                    p {
+                        color: #242e4c;
+                        font-size: 16px;
+                    }
+                }
+                label {
+                    .checkbox {
+                        display: block;
+                        width: 66px;
+                        height: 37px;
+                        border: 2px solid #d8dbe6;
+                        border-radius: 20px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            background: #9298ad;
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                            transition: 300ms all;
+                        }
+                    }
+                    input {
+                        display: none;
+                        &:checked + .checkbox {
+                            &::before {
+                                left: 32px;
+                                background: #874285;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        li {
+            .text {
+                h5 {
+                    margin-top: 55px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    color: #874285;
+                }
+                p {
+                    margin-top: 13px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #242e4c;
+                }
+                select {
+                    margin-top: 35px;
+                    padding: 12px 20px;
+                    width: 330px;
+                    height: 50px;
+                    background-color: transparent;
+                    border: 3px solid rgba(#d8dbe6, 0.7);
+                    border-radius: 5px;
+                    appearance: none;
+                    background: #fff url("./Rectangle.png") no-repeat
+                        calc(100% - 20px);
+                    cursor: pointer;
+                    &:hover {
+                        border-color: rgba(#d8dbe6, 1);
+                    }
+                }
+            }
+        }
+    }
+    .actions {
+        margin-top: 55px;
+        a {
+            display: grid;
+            place-content: center;
+            display: inline-block;
+            padding: 16px 60px;
+            background-color: transparent;
+            color: #9298ad;
+            border: 2px solid #d8dbe6;
+            border-radius: 10px;
+            cursor: pointer;
+            &:first-child {
+                background-color: #f34b8c;
+                color: #fff;
+                border: none;
+            }
+        }
+    }
+}
