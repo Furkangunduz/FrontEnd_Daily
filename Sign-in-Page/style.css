@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: #f8f8fb;
+}
+
+body .sign-in-container {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+body .sign-in-container .head-welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(85, 110, 230, 0.25);
+}
+
+body .sign-in-container .head-welcome ul {
+  margin-top: 25px;
+}
+
+body .sign-in-container .head-welcome ul li {
+  padding-left: 24px;
+  margin-bottom: 8px;
+}
+
+body .sign-in-container .head-welcome ul li:last-child {
+  margin-bottom: 0;
+}
+
+body .sign-in-container .head-welcome ul li h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #556ee6;
+}
+
+body .sign-in-container .head-welcome ul li p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #556ee6;
+}
+
+body .sign-in-container .user-avatar img {
+  position: absolute;
+  top: 78px;
+  left: 24px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+body .sign-in-container form {
+  margin: 80px 30px 24px;
+}
+
+body .sign-in-container form li {
+  margin-bottom: 16px;
+}
+
+body .sign-in-container form li:last-child {
+  margin-bottom: 0;
+}
+
+body .sign-in-container form li label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+body .sign-in-container form li input {
+  border: 1px solid #ced4da;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 395px;
+}
+
+body .sign-in-container form li .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+body .sign-in-container form li .checkbox input {
+  width: auto;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border-color: #adb5bd;
+}
+
+body .sign-in-container form li .checkbox span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  color: #495057;
+}
+
+body .sign-in-container form li button {
+  width: 400px;
+  height: 35px;
+  padding: 8px 12px;
+  background: #556ee6;
+  border-radius: 4px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+body .sign-in-container form li .forgot-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+
+body .sign-in-container form li .forgot-password p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #74788d;
+  margin-left: 8px;
+}
+/*# sourceMappingURL=style.css.map */
