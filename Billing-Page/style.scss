@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    &:focus {
+        outline: none;
+    }
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: #e8e8fd;
+    .container {
+        margin-top: 20px;
+        background-color: #fff;
+        width: 1320px;
+        height: 880px;
+        display: flex;
+        border-radius: 30px;
+        overflow: hidden;
+        .side-bar {
+            background-color: #f8f8ff;
+            height: 880px;
+            padding: 58px 43px 29px 38px;
+            .profile {
+                display: flex;
+                .info {
+                    margin-left: 14px;
+                    h4 {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #62618f;
+                    }
+                }
+            }
+            ul {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    padding: 8px 16px 8px 0;
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                    // margin-left: -6px;
+                    // border-left: 6px solid transparent;
+                    border-radius: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    p {
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: #62618f;
+                    }
+                }
+                .active {
+                    // border-left: 6px solid #EE4D38;
+                }
+                .logout {
+                    margin-top: 365px;
+                }
+            }
+        }
+        .main {
+            margin: 50px 0 107px 75px;
+            .main-header {
+                h4 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: #1a194d;
+                }
+                h5 {
+                    margin-top: 50px;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: 4px;
+                    color: #62618f;
+                    font-size: 14px;
+                }
+            }
+            .order-history {
+                margin-top: 50px;
+                width: 620px;
+                display: flex;
+
+                ul {
+                    &:first-child {
+                        justify-content: space-between;
+                        width: 100%;
+                        h6 {
+                            display: inline-block;
+                            color: #62618f;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 16px;
+                        p {
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                        button {
+                            padding: 8px 16px;
+                            background-color: transparent;
+                            border: 2px solid #cbcbd9;
+                            border-radius: 8px;
+                        }
+                    }
+                    .active {
+                        box-shadow: 0 8px 19px rgba(#dfdffd, 0.6);
+                        border-radius: 8px;
+                    }
+                }
+                a {
+                    text-decoration: underline;
+                    text-decoration-color: #ee4d38;
+                    color: #ee4d38;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            .payment-method {
+                h5 {
+                    margin-top: 50px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                p {
+                    margin-top: 4px;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #62618f;
+                }
+                .credit-card {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 22px;
+                    img {
+                        padding: 10px;
+                        border: 1px solid #cbcbd9;
+                        border-radius: 10px;
+                    }
+                    p {
+                        margin-left: 16px;
+                        width: 385px;
+                        color: #1a194d;
+                    }
+                    button {
+                        margin-left: 16px;
+                        padding: 8px 16px;
+                        background-color: transparent;
+                        border: 2px solid #cbcbd9;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        .plan-info {
+            .info {
+                padding: 32px;
+                background-color: #ee4d38;
+                border-radius: 15px;
+                color: #fff;
+                margin-top: 162px;
+                margin-left: 72px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                h5 {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                button {
+                    padding: 8px 16px;
+                    background-color: transparent;
+                    border: 2px solid rgba(#fff, 0.5);
+                    border-radius: 8px;
+                    color: #fff;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
