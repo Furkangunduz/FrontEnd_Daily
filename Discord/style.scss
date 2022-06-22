@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	&:focus {
+		outline: none;
+	}
+}
+
+body {
+	height: 100vh;
+	background-color: #212325;
+	.page-header {
+		p {
+			color: #72767d;
+			font-weight: bold;
+			font-size: 10px;
+			margin-top: 8px;
+			margin-left: 12px;
+		}
+	}
+	.page-container {
+		display: flex;
+		flex-direction: row;
+		.navbar {
+			height: 100%;
+			width: 70px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 8px;
+			margin-top: 10px;
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+			button {
+				width: 48px;
+				height: 48px;
+				border-radius: 50%;
+				transition: all 250ms;
+				&:hover,
+				&:active {
+					border-radius: 25%;
+				}
+			}
+
+			.home-button {
+				display: grid;
+				place-content: center;
+				padding: 14px 11px;
+				background-color: #36393f;
+				border-radius: 50%;
+			}
+			.server {
+				position: relative;
+				display: grid;
+				place-content: center;
+				cursor: pointer;
+				.server-message {
+					position: absolute;
+					bottom: -2px;
+					right: 0;
+					color: #fff;
+					font-size: x-small;
+					background-color: red;
+					width: 16px;
+					height: 18px;
+					display: grid;
+					place-content: center;
+					border-radius: 50%;
+				}
+				.server-stream {
+					position: absolute;
+					top: -1px;
+					right: 0;
+					color: #fff;
+					font-size: x-small;
+					background-color: #36393f;
+					width: 16px;
+					height: 18px;
+					display: grid;
+					place-content: center;
+					border-radius: 50%;
+				}
+			}
+			.add-new-server {
+				background-color: #36393f;
+				&:hover {
+					background-color: #3ba55d;
+					img {
+						filter: brightness(0) invert(1);
+					}
+				}
+			}
+		}
+		.hr {
+			height: 3px;
+			width: 32px;
+			background-color: #36393f;
+			margin-bottom: 8px;
+			border-radius: 25%;
+		}
+	}
+}

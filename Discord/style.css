@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #212325;
+}
+
+body .page-header p {
+  color: #72767d;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+
+body .page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .page-container .navbar {
+  height: 100%;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body .page-container .navbar button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+body .page-container .navbar button:hover, body .page-container .navbar button:active {
+  border-radius: 25%;
+}
+
+body .page-container .navbar .home-button {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 14px 11px;
+  background-color: #36393f;
+  border-radius: 50%;
+}
+
+body .page-container .navbar .server {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+body .page-container .navbar .server .server-message {
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  color: #fff;
+  font-size: x-small;
+  background-color: red;
+  width: 16px;
+  height: 18px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+body .page-container .navbar .server .server-stream {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  color: #fff;
+  font-size: x-small;
+  background-color: #36393f;
+  width: 16px;
+  height: 18px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+body .page-container .navbar .add-new-server {
+  background-color: #36393f;
+}
+
+body .page-container .navbar .add-new-server:hover {
+  background-color: #3ba55d;
+}
+
+body .page-container .navbar .add-new-server:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+body .page-container .hr {
+  height: 3px;
+  width: 32px;
+  background-color: #36393f;
+  margin-bottom: 8px;
+  border-radius: 25%;
+}
+/*# sourceMappingURL=style.css.map */
